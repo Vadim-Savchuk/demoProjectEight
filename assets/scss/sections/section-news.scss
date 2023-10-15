@@ -1,0 +1,95 @@
+.section-news {
+
+    .news {
+        text-align: center;
+
+        .news__section-title {
+            margin: 1.2rem 0rem 5.6rem;
+        }
+
+        .news__list {
+            gap: 3.6rem;
+            display: flex;
+            text-align: start;
+
+            .news__elem {
+                width: 100%;
+                max-width: 36.6rem;
+                background-color: $dark-color;
+
+                .news__img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    max-height: 36rem;
+                }
+
+                .news__body {
+                    padding: 2rem 2.4rem;
+
+                    .news__date {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .news__subtitle {
+                        display: block;
+                        font-size: 2rem;
+                        overflow: hidden;
+                        line-height: 3rem;
+                        max-width: 28.5rem;
+                        color: $white-color;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        margin: 1.2rem 0rem 3.2rem;
+                        text-transform: capitalize;
+                        transition: color $main-transition ease-in-out;
+
+                        &:hover {
+                            color: $accent-color;
+                        }
+                    }
+
+                    .news__link {
+                        gap: 0.8rem;
+                        display: flex;
+                        width: fit-content;
+                        align-items: center;
+                        color: $accent-color;
+
+                        .news__more {
+                            overflow: hidden;
+                            position: relative;
+
+                            &::before {
+                                left: 0rem;
+                                width: 100%;
+                                content: '';
+                                height: 2px;
+                                bottom: 0rem;
+                                position: absolute;
+                                transform: translateX(-100%);
+                                background-color: $accent-color;
+                                transition: transform $main-transition ease-in-out;
+                            }
+                        }
+
+                        .news__arrow {
+                            margin-bottom: -4px;
+                            transition: transform $main-transition ease-in-out;
+                        }
+
+                        &:hover .news__arrow {
+                            transform: translateX(5px);
+                        }
+
+                        &:hover .news__more::before {
+                            transform: translateX(0%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

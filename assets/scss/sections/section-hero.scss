@@ -1,0 +1,80 @@
+.section-hero {
+    height: 100%;
+    display: flex;
+    min-height: 74rem;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/hero-baner.jpg');
+
+    .hero {
+        width: 100%;
+
+        .hero__main-title {
+            width: 100%;
+            max-width: 53rem;
+        }
+
+        .hero__desc {
+            width: 100%;
+            max-width: 51.1rem;
+            margin: 3.2rem 0rem 6.4rem;
+        }
+
+        .hero__actions {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .button-play {
+                gap: 2rem;
+                display: flex;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                text-align: center;
+                align-items: center;
+                color: $white-color;
+                flex-direction: column;
+                background: transparent;
+                text-transform: uppercase;
+                font-family: $additional-font;
+                transition: all 0.2s ease-in-out;
+
+                span {
+                    overflow: hidden;
+                    position: relative;
+
+                    &::before {
+                        left: 0rem;
+                        width: 100%;
+                        content: '';
+                        height: 2px;
+                        bottom: 0rem;
+                        position: absolute;
+                        transform: translateX(-100%);
+                        background-color: $accent-color;
+                        transition: transform $main-transition ease-in-out;
+                    }
+                }
+
+                svg {
+                    transition: all 0.2s ease-in-out;
+                }
+
+                &:hover svg {
+                    transform: scale(1.1);
+                }
+
+                &:hover span::before {
+                    transform: translateX(0%);
+                }
+
+                &:hover span {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}

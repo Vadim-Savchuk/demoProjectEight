@@ -1,0 +1,133 @@
+.section-popular {
+
+    .popular {
+        text-align: center;
+
+        .popular__section-title {
+            margin-top: 1.2rem;
+        }
+
+        .popular__list {
+            gap: 3.6rem;
+            display: flex;
+            text-align: start;
+            margin: 5.6rem 0rem;
+            justify-content: space-between;
+
+            .popular__elem {
+                padding: 4.8rem;
+                text-align: center;
+                max-width: 36.6rem;
+                position: relative;
+                background-color: $extra-color;
+                transition: all $main-size ease-in-out;
+
+                .popular__img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 27rem;
+                    max-height: 34.3rem;
+                }
+
+                .popular__body {
+                    display: flex;
+                    margin-top: 3.6rem;
+                    position: relative;
+                    flex-direction: column;
+                    transition: all $main-transition ease-in-out;
+                }
+
+                .popular__rating {
+                    gap: 0.6rem;
+                    display: flex;
+                    margin-bottom: 2rem;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all $main-transition ease-in-out;
+
+                    svg {
+                        transition: height $main-transition ease-in-out;
+                    }
+
+                    .popular__name {
+                        margin-right: 1.4rem;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .popular__section-subtitle {
+                    color: $white-color;
+                    margin-bottom: 2rem;
+                    text-transform: uppercase;
+                    transition: color $main-transition ease-in-out;
+
+                    &:hover {
+                        color: $accent-color;
+                    }
+                }
+
+                .popular__price {
+                    margin-bottom: 2rem;
+                    text-transform: uppercase;
+                    transition: all $main-transition ease-in-out;
+
+                    .popular__sell {
+                        text-decoration: line-through;
+                    }
+                }
+
+                .popular__button {
+                    gap: 1.2rem;
+                    display: flex;
+                    margin: 0 auto;
+                    font-size: 1.8rem;
+                    padding: 1.2rem 2rem;
+                    width: fit-content;
+                    color: $white-color;
+                    line-height: 2.2rem;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $accent-color;
+                    transition: all 0.2s ease-in-out;
+                    border: 2px solid transparent;
+
+                    top: 50%;
+                    left: 50%;
+                    opacity: 0;
+                    width: max-content;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+
+                    &:hover {
+                        background: transparent;
+                        border: 2px solid $accent-color;
+                    }
+                }
+
+                &:hover .popular__body {
+                    margin-top: 2rem;
+                }
+
+                &:hover .popular__rating,
+                &:hover .popular__price {
+                    opacity: 0;
+                    z-index: -1;
+                    margin-bottom: 0rem;
+                }
+
+                &:hover .popular__rating {
+                    transform: translateY(100%);
+                }
+
+                &:hover .popular__price {
+                    transform: translateY(-100%);
+                }
+
+                &:hover .popular__button {
+                    top: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

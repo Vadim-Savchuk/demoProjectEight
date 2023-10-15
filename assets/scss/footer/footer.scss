@@ -1,0 +1,86 @@
+.footer {
+    .footer__top {
+        gap: 4rem;
+        display: flex;
+        align-items: center;
+
+        .footer__nav {
+            gap: 4rem;
+            display: flex;
+
+            .footer__link {
+                font-size: 2rem;
+                line-height: 2rem;
+                color: $white-color;
+                transition: color $main-transition ease-in-out;
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+
+        .footer__form {
+            width: 100%;
+            display: flex;
+            max-width: 33rem;
+            overflow: hidden;
+            margin-left: auto;
+            position: relative;
+            align-items: center;
+            border-radius: 3.6rem;
+            background-color: $dark-color;
+
+            label {
+                display: none;
+            }
+
+            input {
+                width: 100%;
+                font-size: 1.6rem;
+                color: $white-color;
+                line-height: 2.9rem;
+                border-radius: 3.6rem;
+                border: 2px solid transparent;
+                background-color: transparent;
+                padding: 2.1rem 8rem 2.1rem 2.8rem;
+
+                &:focus {
+                    border: 2px solid $white-color;
+                }
+            }
+
+            .footer__button {
+                top: 50%;
+                width: 4.8rem;
+                right: 1.2rem;
+                height: 4.8rem;
+                position: absolute;
+                border-radius: 50%;
+                transform: translateY(-50%);
+                background-color: $accent-color;
+                transition: all $main-transition ease-in-out;
+
+                svg path {
+                    transition: all $main-transition ease-in-out;
+                }
+
+                &:hover {
+                    background-color: $white-color;
+                }
+
+                &:hover svg path {
+                    stroke: $extra-color;
+                }
+            }
+        }
+    }
+
+    .footer__bottom {
+        margin-top: 9.8rem;
+        text-align: center;
+        padding: 3.3rem 2rem;
+        background-color: $dark-color;
+
+    }
+}

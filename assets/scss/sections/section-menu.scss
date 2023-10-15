@@ -1,0 +1,39 @@
+.section-menu {
+
+    .menu {
+        text-align: center;
+
+        .menu__section-title {
+            margin-top: 1.2rem;
+        }
+
+        .menu__list {
+            gap: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: start;
+            margin-top: 5.6rem;
+
+            .menu__elem {
+                gap: 2rem;
+                display: flex;
+                padding: 2.4rem;
+                align-items: center;
+                width: calc(50% - 2rem);
+                border: 1px solid #32323D;
+
+                .menu__img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 7.2rem;
+                    object-fit: cover;
+                    max-height: 7.2rem;
+                }
+
+                .menu__price {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}

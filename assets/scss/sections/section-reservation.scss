@@ -1,0 +1,63 @@
+.section-reservation {
+
+    .reservation {
+        display: flex;
+        background-color: $dark-color;
+        justify-content: space-between;
+
+        .reservation__img,
+        .reservation__body {
+            flex: 1;
+        }
+
+        .reservation__img {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .reservation__body {
+            display: flex;
+            padding: 4.8rem;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+
+            .reservation__section-title {
+                margin: 1.6rem 0rem 5.6rem;
+            }
+
+            .reservation-form {
+                gap: 2.4rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                label {
+                    display: none;
+                }
+
+                .reservation-form__input {
+                    width: 100%;
+                    display: block;
+                    font-size: 1.8rem;
+                    line-height: 3.3rem;
+                    padding: 1.6rem 2rem;
+                    color: $supplementary-color;
+                    border: 2px solid transparent;
+                    background-color: $secondary-color;
+
+                    &:focus {
+                        border: 2px solid $white-color;
+                    }
+
+                    &::placeholder {
+                        color: $supplementary-color;
+                    }
+                }
+            }
+        }
+    }
+}

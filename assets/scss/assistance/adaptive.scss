@@ -1,0 +1,320 @@
+@media (max-width: 1200px) {
+    .main-title {
+        font-size: clamp(4.2rem, 3.109rem + 5.45vw, 7.2rem);
+        line-height: clamp(6.4rem, 5.309rem + 5.45vw, 9.4rem);
+    }
+
+    .section-title {
+        font-size: clamp(2.8rem, 2.073rem + 3.64vw, 4.8rem);
+        line-height: clamp(4.3rem, 3.573rem + 3.64vw, 6.3rem);
+    }
+
+    .section {
+        margin: clamp(8rem, 5.818rem + 10.91vw, 14rem) 0rem;
+    }
+
+    // Footer===============
+    .footer {
+        .footer__top {
+            flex-wrap: wrap;
+
+            .footer__form {
+                margin-left: 0rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    // Header================
+    .header {
+        .header__body {
+            .burger {
+                z-index: 4;
+                display: block;
+                position: relative;
+            }
+
+            .nav {
+                top: 0;
+                gap: 3rem;
+                z-index: 3;
+                left: -100%;
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                flex-direction: column;
+                justify-content: center;
+                background-color: $extra-color;
+                transition: all $main-transition ease-in-out;
+
+                .logo {
+                    display: none;
+                }
+
+                .nav__list {
+                    gap: 3rem;
+                    flex-direction: column;
+                }
+
+                &.active {
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    // Section history=======
+    .section-history {
+        .history {
+            .history__images {
+                width: auto;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-areas:
+                    "img1"
+                    "img2";
+
+                .history__high-image {
+                    display: none;
+                }
+            }
+
+            .history__body {
+                flex: 1;
+            }
+        }
+    }
+
+    // Section popular=======
+    .section-popular {
+        .popular {
+            .popular__list {
+                flex-wrap: wrap;
+
+                .popular__elem {
+                    flex: 1;
+                    max-width: none;
+
+                    .popular__img {
+                        max-width: 27rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section slider========
+    .section-slider {
+        .slider {
+            .slider__slide {
+                .slider__top {
+                    align-items: start;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    // Section news==========
+    .section-news {
+        .news {
+            .news__list {
+                gap: 2rem;
+                flex-wrap: wrap;
+
+                .news__elem {
+                    flex: 1;
+                    width: auto;
+                    max-width: calc(50% - 1rem);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    // Section history=======
+    .section-history {
+        .history {
+            .history__images {
+                display: none;
+            }
+        }
+    }
+
+    // Section buy===========
+    .section-buy {
+        .buy {
+            flex-direction: column;
+
+            .buy__img {
+                width: 100%;
+            }
+
+            .buy__body {
+                width: 100%;
+            }
+        }
+    }
+
+    // Section menu==========
+    .section-menu {
+        .menu {
+            .menu__list {
+                gap: 2rem;
+
+                .menu__elem {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // Section reservation===
+    .section-reservation {
+        .reservation {
+            flex-direction: column-reverse;
+
+            .reservation__img {
+                height: 100%;
+                overflow: hidden;
+                max-height: 20rem;
+            }
+
+            .reservation__body {
+                padding: 2.8rem;
+            }
+        }
+    }
+
+    // Footer================
+    .footer {
+        .footer__top {
+            text-align: center;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .footer__nav {
+                order: 3;
+                flex-wrap: wrap;
+                flex-basis: 100%;
+            }
+
+            .footer__form {
+                order: 2;
+                margin-top: auto;
+            }
+        }
+
+        .footer__bottom {
+            margin-top: clamp(3.8rem, -0.486rem + 21.43vw, 9.8rem);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    // Section hero==========
+    .section-hero {
+        .hero {
+            .hero__actions {
+                align-items: center;
+            }
+        }
+    }
+
+    // Section process=======
+    .section-process {
+        .process {
+            align-items: center;
+            flex-direction: column;
+
+            .process__elem {
+                max-width: 100%;
+            }
+        }
+    }
+
+    // Section history=======
+    .section-history {
+        .history {
+            .history__body {
+                padding: 2.6rem;
+            }
+        }
+    }
+
+    // Section popular=======
+    .section-popular {
+        .popular {
+            .popular__list {
+                .popular__elem {
+                    padding: 2.8rem;
+                }
+            }
+        }
+    }
+
+    // Section buy===========
+    .section-buy {
+        .buy {
+            padding: 3rem;
+        }
+    }
+
+    // Section menu==========
+    .section-menu {
+        .menu {
+            .menu__list {
+                .menu__elem {
+                    flex-wrap: wrap;
+
+                    .section-subtitle {
+                        flex: 1;
+                        width: 100%;
+                    }
+
+                    .menu__price {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // Section slider========
+    .section-slider {
+        .slider {
+            .slider__slide {
+                padding: 2rem;
+
+                .slider__bottom {
+                    align-items: start;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    // Section news==========
+    .section-news {
+        .news {
+            .news__list {
+                .news__elem {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    // Footer================
+    .footer {
+        .footer__top {
+            .footer__nav {}
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.section-process {
+
+    .process {
+        gap: 3.6rem;
+        display: flex;
+
+        .process__elem {
+            gap: 2.4rem;
+            width: 100%;
+            display: flex;
+            max-width: 36.6rem;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .process__section-subtitle {
+                span {
+                    margin-right: 1.2rem;
+                }
+            }
+
+            .process__img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                max-height: 42rem;
+            }
+        }
+    }
+}
