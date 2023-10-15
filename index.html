@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="ang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.svg">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <title>Coffee Shop</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <button class="burger">
+                    <span class="burger__line"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list nav__list--first">
+                        <li class="nav__elem">
+                            <a class="nav__link nav__link--active" href="#home">Home</a>
+                        </li>
+                        <li class="nav__elem">
+                            <a class="nav__link" href="#about">About</a>
+                        </li>
+                        <li class="nav__elem">
+                            <a class="nav__link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav__elem">
+                            <a class="nav__link" href="#reservation">Reservation</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="logo">
+                        <img src="./assets/img/logo.svg" alt="Coffee Shop">
+                    </a>
+                    <ul class="nav__list nav__list--last">
+                        <li class="nav__elem">
+                            <a class="nav__link" href="#">Pages</a>
+                        </li>
+                        <li class="nav__elem">
+                            <a class="nav__link" href="../../shop.html">Shop</a>
+                        </li>
+                        <li class="nav__elem">
+                            <a class="nav__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <!-- Search -->
+                    <div class="search-offer">
+                        <button class="header__button header__button-search">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.75 23.75C19.2728 23.75 23.75 19.2728 23.75 13.75C23.75 8.22715 19.2728 3.75 13.75 3.75C8.22715 3.75 3.75 8.22715 3.75 13.75C3.75 19.2728 8.22715 23.75 13.75 23.75Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M26.25 26.25L20.8125 20.8125" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="search">
+                            <form>
+                                <input type="text">
+                                <button class="header__button search__button">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.75 23.75C19.2728 23.75 23.75 19.2728 23.75 13.75C23.75 8.22715 19.2728 3.75 13.75 3.75C8.22715 3.75 3.75 8.22715 3.75 13.75C3.75 19.2728 8.22715 23.75 13.75 23.75Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M26.25 26.25L20.8125 20.8125" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Basket -->
+                    <div class="basket-offer">
+                        <a href="#" class="header__button header__button-basket">
+                            <span class="basket__alarm" data-show="none"></span>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.5 2.5L3.75 7.5V25C3.75 25.663 4.01339 26.2989 4.48223 26.7678C4.95107 27.2366 5.58696 27.5 6.25 27.5H23.75C24.413 27.5 25.0489 27.2366 25.5178 26.7678C25.9866 26.2989 26.25 25.663 26.25 25V7.5L22.5 2.5H7.5Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.75 7.5H26.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M20 12.5C20 13.8261 19.4732 15.0979 18.5355 16.0355C17.5979 16.9732 16.3261 17.5 15 17.5C13.6739 17.5 12.4021 16.9732 11.4645 16.0355C10.5268 15.0979 10 13.8261 10 12.5"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="basket">
+                            <ul class="basket__list">
+                                <!-- <li class="basket__elem">
+                                    <h5 class="basket__product">BRAZIL COFFEE RED</h5>
+                                    <div class="basket__quantity">1 X 320$</div>
+                                    <button class="basket__delate">&#215;</button>
+                                </li>
+                                <li class="basket__elem">
+                                    <h5 class="basket__product">BRAZIL COFFEE RED</h5>
+                                    <div class="basket__quantity">1 X 320$</div>
+                                    <button class="basket__delate">&#215;</button>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>    <main>
+        <section class="section-hero" id="home">
+            <div class="container">
+                <div class="hero">
+                    <h1 class="main-title hero__main-title">Enjoy Your Morning Coffee.</h1>
+                    <p class="desc hero__desc">The coofee is brewed by fist roasting the green coffee beans over hot coals in
+                        brazier. given to Opportunity</p>
+                    <div class="hero__actions">
+                        <button class="button her">Test Coffee</button>
+                        <button class="button-play">
+                            <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="34.25" stroke="white" stroke-width="1.5" />
+                                <path d="M28 26L42 35L28 44V26Z" fill="white" />
+                            </svg>
+                            <span>Play video</span>
+                        </button>
+                    </div>
+                    <div class="video-box"></div>
+                </div>
+            </div>
+        </section>        <section class="section section-process">
+            <div class="container">
+                <ul class="process">
+                    <li class="process__elem">
+                        <h3 class="section-subtitle process__section-subtitle">
+                            <span class="accent process__accent">01</span>
+                            Best Coffee Flavour
+                        </h3>
+                        <img class="process__img" src="./assets/img/section-process1.jpg" alt="Our coffee">
+                    </li>
+                    <li class="process__elem">
+                        <h3 class="section-subtitle process__section-subtitle">
+                            <span class="accent process__accent">02</span>
+                            Place to get lost
+                        </h3>
+                        <img class="process__img" src="./assets/img/section-process2.jpg" alt="Our coffee">
+                    </li>
+                    <li class="process__elem">
+                        <h3 class="section-subtitle process__section-subtitle">
+                            <span class="accent process__accent">03</span>
+                            Proper roesting
+                        </h3>
+                        <img class="process__img" src="./assets/img/section-process3.jpg" alt="Our coffee">
+                    </li>
+                </ul>
+            </div>
+        </section>        <section class="section section-history" id="about">
+            <div class="container">
+                <div class="history">
+                    <div class="history__images">
+                        <img class="history__image history__image--1" src="./assets/img/section-process1.jpg"
+                            alt="Our coffee">
+                        <img class="history__image history__image--2" src="./assets/img/section-process2.jpg"
+                            alt="Our coffee">
+                        <img class="history__high-image history__image--3" src="./assets/img/section-history.jpg"
+                            alt="Our coffee">
+                    </div>
+                    <div class="history__body">
+                        <h3 class="accent">Our history</h3>
+                        <h2 class="section-title history__section-title">Create a <br> new story with us</h2>
+                        <p class="desc history__desc">
+                            mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula
+                            volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nibh maximus, est eu, mattis
+                            nuce. preasent ut quam quis quam venens
+                            atis fringilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>        <section class="section section-popular">
+            <div class="container">
+                <div class="popular">
+                    <h4 class="accent">Popular Product</h4>
+                    <h2 class="section-title popular__section-title">Coffee popular Product</h2>
+                    <ul class="popular__list">
+                        <!-- <li class="popular__elem">
+                            <img class="popular__img" src="./assets/img/bag-cofe.jpg" alt="Our Coffee">
+                            <div class="popular__body">
+                                <div class="popular__rating accent">
+                                    <strong class="popular__name">Coffee</strong>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                                                stroke="#C99E71" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="section-subtitle popular__section-subtitle" href="#">brazil coffee gred</a>
+                                <div class="popular__price">Price - <span class="accent">$320.00/</span> <span
+                                        class="popular__sell">$358</span></div>
+                                <button class="popular__button">
+                                    <span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    Add to cart
+                                </button>
+                            </div>
+                        </li>
+                        <li class="popular__elem">
+                            <img class="popular__img" src="./assets/img/bag-cofe.jpg" alt="Our Coffee">
+                            <div class="popular__body">
+                                <div class="popular__rating accent">
+                                    <strong class="popular__name">Coffee</strong>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                                                stroke="#C99E71" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="section-subtitle popular__section-subtitle" href="#">brazil coffee gred</a>
+                                <div class="popular__price">Price - <span class="accent">$320.00/</span> <span
+                                        class="popular__sell">$358</span></div>
+                                <button class="popular__button">
+                                    <span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    Add to cart
+                                </button>
+                            </div>
+                        </li>
+                        <li class="popular__elem">
+                            <img class="popular__img" src="./assets/img/bag-cofe.jpg" alt="Our Coffee">
+                            <div class="popular__body">
+                                <div class="popular__rating accent">
+                                    <strong class="popular__name">Coffee</strong>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9 0.666687L11.575 5.88335L17.3333 6.72502L13.1667 10.7834L14.15 16.5167L9 13.8084L3.85 16.5167L4.83333 10.7834L0.666666 6.72502L6.425 5.88335L9 0.666687Z"
+                                                fill="#C99E71" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                                                stroke="#C99E71" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <a class="section-subtitle popular__section-subtitle" href="#">brazil coffee gred</a>
+                                <div class="popular__price">Price - <span class="accent">$320.00/</span> <span
+                                        class="popular__sell">$358</span></div>
+                                <button class="popular__button">
+                                    <span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+                                                stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    Add to cart
+                                </button>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <button class="button">View all product</button>
+                </div>
+            </div>
+        </section>        <section class="section section-buy">
+            <div class="container">
+                <div class="buy">
+                    <div class="buy__img">
+                        <img src="./assets/img/section-cpa.png" alt="Our coffee">
+                    </div>
+                    <div class="buy__body">
+                        <h2 class="section-title">Coffee <br> machine, buy for home</h2>
+                        <p class="desc buy__desc">
+                            mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula
+                            volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nib
+                            maximus, est eu, mattis nuce. preasent ut quam quis quam venen atis fri
+                            ngilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.
+                        </p>
+                        <button class="button buy__button">Discover now</button>
+                    </div>
+                </div>
+            </div>
+        </section>        <section class="section section-menu" id="menu">
+            <div class="container">
+                <div class="menu">
+                    <h4 class="accent">Menu</h4>
+                    <h2 class="section-title menu__section-title">Coffee popular menu</h2>
+                    <ul class="menu__list">
+                        <li class="menu__elem">
+                            <img class="menu__img" src="./assets/img/menu1.jpg" alt="Our Coffee">
+                            <h3 class="section-subtitle">Americano rosted gred</h3>
+                            <div class="menu__price accent">$12:00</div>
+                        </li>
+                        <li class="menu__elem">
+                            <img class="menu__img" src="./assets/img/menu2.jpg" alt="Our Coffee">
+                            <h3 class="section-subtitle">Americano rosted gred</h3>
+                            <div class="menu__price accent">$12:00</div>
+                        </li>
+                        <li class="menu__elem">
+                            <img class="menu__img" src="./assets/img/menu3.jpg" alt="Our Coffee">
+                            <h3 class="section-subtitle">Americano rosted gred</h3>
+                            <div class="menu__price accent">$12:00</div>
+                        </li>
+                        <li class="menu__elem">
+                            <img class="menu__img" src="./assets/img/section-process1.jpg" alt="Our Coffee">
+                            <h3 class="section-subtitle">Americano rosted gred</h3>
+                            <div class="menu__price accent">$12:00</div>
+                        </li>
+                        <li class="menu__elem">
+                            <img class="menu__img" src="./assets/img/section-process2.jpg" alt="Our Coffee">
+                            <h3 class="section-subtitle">Americano rosted gred</h3>
+                            <div class="menu__price accent">$12:00</div>
+                        </li>
+                        <li class="menu__elem">
+                            <img class="menu__img" src="./assets/img/section-process3.jpg" alt="Our Coffee">
+                            <h3 class="section-subtitle">Americano rosted gred</h3>
+                            <div class="menu__price accent">$12:00</div>
+                        </li>
+                        <li class="menu__elem">
+                            <img class="menu__img" src="./assets/img/menu2.jpg" alt="Our Coffee">
+                            <h3 class="section-subtitle">Americano rosted gred</h3>
+                            <div class="menu__price accent">$12:00</div>
+                        </li>
+                        <li class="menu__elem">
+                            <img class="menu__img" src="./assets/img/menu3.jpg" alt="Our Coffee">
+                            <h3 class="section-subtitle">Americano rosted gred</h3>
+                            <div class="menu__price accent">$12:00</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>        <section class="section section-slider">
+            <div class="container">
+                <div class="slider">
+                    <h3 class="accent">Testimonial</h3>
+                    <h2 class="section-title slider__section-title">Says our customers</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider__slide">
+                                    <div class="slider__top">
+                                        <img class="slider__img" src="./assets/img/slider2.jpg" alt="John Smith">
+                                        <p class="desc slider__desc">Education WP is a special build for effective education &
+                                            Learning
+                                            Management System
+                                            site. Education WP is the next generation & one of the best education WordPress
+                                            themes which all
+                                            the strength of eLearning WP..
+                                        </p>
+                                    </div>
+                                    <div class="slider__bottom">
+                                        <div class="slider__user">
+                                            <div class="slider__name">Julia Mo</div>
+                                            <div class="slider__pos">Product Designer</div>
+                                        </div>
+                                        <div class="slider__rating">
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__slide">
+                                    <div class="slider__top">
+                                        <img class="slider__img" src="./assets/img/slider1.jpg" alt="John Smith">
+                                        <p class="desc slider__desc">Education WP is a special build for effective education &
+                                            Learning
+                                            Management System
+                                            site. Education WP is the next generation & one of the best education WordPress
+                                            themes which all
+                                            the strength of eLearning WP..
+                                        </p>
+                                    </div>
+                                    <div class="slider__bottom">
+                                        <div class="slider__user">
+                                            <div class="slider__name">John Smith</div>
+                                            <div class="slider__pos">Product Designer</div>
+                                        </div>
+                                        <div class="slider__rating">
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__slide">
+                                    <div class="slider__top">
+                                        <img class="slider__img" src="./assets/img/slider3.jpg" alt="John Smith">
+                                        <p class="desc slider__desc">Education WP is a special build for effective education &
+                                            Learning
+                                            Management System
+                                            site. Education WP is the next generation & one of the best education WordPress
+                                            themes which all
+                                            the strength of eLearning WP..
+                                        </p>
+                                    </div>
+                                    <div class="slider__bottom">
+                                        <div class="slider__user">
+                                            <div class="slider__name">John Do</div>
+                                            <div class="slider__pos">Product Designer</div>
+                                        </div>
+                                        <div class="slider__rating">
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__slide">
+                                    <div class="slider__top">
+                                        <img class="slider__img" src="./assets/img/slider4.jpg" alt="John Smith">
+                                        <p class="desc slider__desc">Education WP is a special build for effective education &
+                                            Learning
+                                            Management System
+                                            site. Education WP is the next generation & one of the best education WordPress
+                                            themes which all
+                                            the strength of eLearning WP..
+                                        </p>
+                                    </div>
+                                    <div class="slider__bottom">
+                                        <div class="slider__user">
+                                            <div class="slider__name">Julia Mo</div>
+                                            <div class="slider__pos">Product Designer</div>
+                                        </div>
+                                        <div class="slider__rating">
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__slide">
+                                    <div class="slider__top">
+                                        <img class="slider__img" src="./assets/img/slider5.jpg" alt="John Smith">
+                                        <p class="desc slider__desc">Education WP is a special build for effective education &
+                                            Learning
+                                            Management System
+                                            site. Education WP is the next generation & one of the best education WordPress
+                                            themes which all
+                                            the strength of eLearning WP..
+                                        </p>
+                                    </div>
+                                    <div class="slider__bottom">
+                                        <div class="slider__user">
+                                            <div class="slider__name">John Syna</div>
+                                            <div class="slider__pos">Product Designer</div>
+                                        </div>
+                                        <div class="slider__rating">
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__slide">
+                                    <div class="slider__top">
+                                        <img class="slider__img" src="./assets/img/slider6.jpg" alt="John Smith">
+                                        <p class="desc slider__desc">Education WP is a special build for effective education &
+                                            Learning
+                                            Management System
+                                            site. Education WP is the next generation & one of the best education WordPress
+                                            themes which all
+                                            the strength of eLearning WP..
+                                        </p>
+                                    </div>
+                                    <div class="slider__bottom">
+                                        <div class="slider__user">
+                                            <div class="slider__name">Victoria Bing</div>
+                                            <div class="slider__pos">Product Designer</div>
+                                        </div>
+                                        <div class="slider__rating">
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                                                        fill="#FAA61A" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__actions">
+                            <div class="slider__pagination accent">
+                                <div class="slider__people"></div>
+                                <div class="slider__row"></div>
+                            </div>
+                            <div class="slider__buttons">
+                                <button class="slider__button slider__button-prev">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_180)">
+                                            <path d="M23 12H5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M12 19L5 12L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1_180">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(24 24) rotate(180)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <button class="slider__button slider__button-next">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 12.0001L19 12.0001" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 5.00012L19 12.0001L12 19.0001" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        <section class="section section-reservation" id="reservation">
+            <div class="container">
+                <div class="reservation">
+                    <div class="reservation__img">
+                        <img src="./assets/img/reservation-map.jpg" alt="Map">
+                    </div>
+                    <div class="reservation__body">
+                        <h3 class="accent">Reservation</h3>
+                        <h2 class="section-title reservation__section-title">Booking a table</h2>
+                        <form class="reservation-form">
+                            <label for="person"></label>
+                            <input class="reservation-form__input" id="person" type="number" placeholder="4 person">
+                            <div class="date-offer">
+                                <label for="date"></label>
+                                <input class="reservation-form__input" id="date" type="text" placeholder="12.25, 2020" readonly>
+                                <div class="calendar-offer">
+                                    <div class="closse-calendar">&#215;</div>
+                                    <div class="calendar">
+                                        <div class="header">
+                                            <a data-action="prev-month" href="javascript:void(0)"
+                                                title="Previous Month"><i></i></a>
+                                            <div class="text" data-render="month-year"></div>
+                                            <a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+                                        </div>
+                                        <div class="months" data-flow="left">
+                                            <div class="month month-a">
+                                                <div class="render render-a"></div>
+                                            </div>
+                                            <div class="month month-b">
+                                                <div class="render render-b"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="time"></label>
+                            <input class="reservation-form__input" id="time" type="number" placeholder="11:00 AM">
+                            <button class="button">BOOK S TABLE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>        <section class="section section-news">
+            <div class="container">
+                <div class="news">
+                    <h4 class="accent">Testimonial</h4>
+                    <h2 class="section-title news__section-title">Our latest news</h2>
+                    <ul class="news__list">
+                        <li class="news__elem">
+                            <img class="news__img" src="./assets/img/section-process3.jpg" alt="Our Coffee">
+                            <div class="news__body">
+                                <div class="news__date">
+                                    <div><span class="accent">By:</span> rasaline</div>
+                                    <time>23.01.2021</time>
+                                </div>
+                                <a class="news__subtitle" href="#">Ideal cocktails from barmen</a>
+                                <a class="news__link" href="#">
+                                    <div class="news__more">Read More</div>
+                                    <span class="news__arrow">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12H19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M12 5L19 12L12 19" stroke="#C99E71" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="news__elem">
+                            <img class="news__img" src="./assets/img/section-process2.jpg" alt="Our Coffee">
+                            <div class="news__body">
+                                <div class="news__date">
+                                    <div><span class="accent">By:</span> rasaline</div>
+                                    <time>23.01.2021</time>
+                                </div>
+                                <a class="news__subtitle" href="#">Ideal cocktails from barmen</a>
+                                <a class="news__link" href="#">
+                                    <div class="news__more">Read More</div>
+                                    <span class="news__arrow">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12H19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M12 5L19 12L12 19" stroke="#C99E71" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="news__elem">
+                            <img class="news__img" src="./assets/img/section-process1.jpg" alt="Our Coffee">
+                            <div class="news__body">
+                                <div class="news__date">
+                                    <div><span class="accent">By:</span> rasaline</div>
+                                    <time>23.01.2021</time>
+                                </div>
+                                <a class="news__subtitle" href="#">Ideal cocktails from barmen</a>
+                                <a class="news__link" href="#">
+                                    <div class="news__more">Read More</div>
+                                    <span class="news__arrow">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12H19" stroke="#C99E71" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M12 5L19 12L12 19" stroke="#C99E71" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="logo">
+                    <img src="./assets/img/logo.svg" alt="Coffee shop">
+                </div>
+                <ul class="footer__nav">
+                    <li class="footer__elem">
+                        <a class="footer__link" href="#home">Home</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a class="footer__link" href="#resertvation">Rerervation</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a class="footer__link" href="#menu">Menu</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a class="footer__link" href="#about">About</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a class="footer__link" href="#">Pages</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a class="footer__link" href="#">Shop</a>
+                    </li>
+                    <li class="footer__elem">
+                        <a class="footer__link" href="#">Blogs</a>
+                    </li>
+                </ul>
+                <form class="footer__form">
+                    <label for="email"></label>
+                    <input type="text" placeholder="Enter your email">
+                    <button class="footer__button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.99994 12L18.9999 12" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M12 5L19 12L12 19" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>e-Tennis © 2021. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>
